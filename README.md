@@ -3,6 +3,7 @@
 <a href="https://github.com/ndeadly/MissionControl/releases/latest"><img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/ndeadly/MissionControl"></a>
 <a href="https://github.com/ndeadly/MissionControl/releases"><img alt="GitHub All Releases" src="https://img.shields.io/github/downloads/ndeadly/MissionControl/total"></a>
 <a href="https://github.com/ndeadly/MissionControl/releases/latest"><img alt="GitHub Releases" src="https://img.shields.io/github/downloads/ndeadly/MissionControl/latest/total"></a><br>
+ 
 <a href="https://discord.gg/gegfNZ5Ucz"><img alt="Discord Server" src="https://dcbadge.limes.pink/api/server/https://discord.gg/gegfNZ5Ucz?style=flat"/></a>
 <a href="https://ko-fi.com/J3J01BZZ6"><img alt="Support me on Ko-fi" src="https://img.shields.io/badge/Support%20me%20on%20Ko--fi-ff5a16?logo=ko-fi&logoColor=f4efe7"/></a>
 
