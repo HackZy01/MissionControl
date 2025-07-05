@@ -4,7 +4,7 @@
 <a href="https://github.com/ndeadly/MissionControl/releases"><img alt="GitHub All Releases" src="https://img.shields.io/github/downloads/ndeadly/MissionControl/total"></a>
 <a href="https://github.com/ndeadly/MissionControl/releases/latest"><img alt="GitHub Releases" src="https://img.shields.io/github/downloads/ndeadly/MissionControl/latest/total"></a>
 <a href="https://discord.gg/gegfNZ5Ucz"><img alt="Discord Server" src="https://discordapp.com/api/guilds/905069757361971303/widget.png?style=shield"/></a>
-<a href="https://ko-fi.com/J3J01BZZ6"><img alt="Support me on Ko-fi" src="https://img.shields.io/badge/Support%20me%20on%20Ko--fi-72A5F2?logo=ko-fi&logoColor=FF6433"/></a>
+<a href="https://ko-fi.com/J3J01BZZ6"><img alt="Support me on Ko-fi" src="https://img.shields.io/badge/Support%20me%20on%20Ko--fi-ff5a16?logo=ko-fi&logoColor=f4efe7"/></a>
 <br>
 <a href="https://www.bitcoinqrcodemaker.com/api/?style=bitcoin&prefix=on&address=bc1q4rh4vmqaujmewrswes303nms5mj3p80j7lqat0"><img alt="Donate Bitcoin" src="https://img.shields.io/static/v1?label=donate&message=bc1q4rh4vmqaujmewrswes303nms5mj3p80j7lqat0&color=yellow&style=flat&logo=bitcoin"></a>
 <a href="https://www.bitcoinqrcodemaker.com/api/?style=ethereum&prefix=on&address=0xFD28C8680416D5c706Ad8E404955e0a3A2aA7124"><img alt="Donate Ethereum" src="https://img.shields.io/static/v1?label=donate&message=0xFD28C8680416D5c706Ad8E404955e0a3A2aA7124&color=yellow&style=flat&logo=ethereum"></a>
@@ -29,55 +29,124 @@ Use controllers from other consoles natively on your Nintendo Switch via Bluetoo
 
 ### Supported Controllers
 
- Currently, the following controllers are supported. If you have a third-party variant of one of the below, or a Bluetooth controller that isn't listed, consider submitting a controller request [issue](https://github.com/ndeadly/MissionControl/issues/new/choose).
+ Currently, the following controllers are supported. </br> If you have a third-party variant of one of the below, or a Bluetooth controller that isn't listed, consider submitting a controller request [issue](https://github.com/ndeadly/MissionControl/issues/new/choose).
+<details>
+<summary><strong>Nintendo</strong></summary>
 
-* __Nintendo Wii Remote + extensions (Nunchuck, Classic Controller, Classic Controller Pro, SNES Mini, TaTaCon (Taiko drum), MotionPlus)__
-* __Nintendo Wii Balance Board (experimental)__
-* __Nintendo WiiU Pro Controller__
-* __Sony Dualshock3 (Playstation 3) Controller__
-* __Sony DualShock4 (Playstation 4) Controller__
-* __Sony Dualsense (Playstation 5) Controller__
-* __Sony Dualsense Edge Controller__
-* __Microsoft Xbox One S/X Controller (not to be confused with Series S/X controllers - these use Bluetooth LE, which isn't currently supported)__*
-* __Microsoft Xbox Elite Wireless Controller Series 2__
-* __NVidia Shield Controller (2017 Model)__
-* __Ouya Controller__
-* __Gamestick Controller__
-* __Gembox Controller__
-* __iCade Controller__
-* __Ipega Controllers (7197, 9017s, 9023, 9055, 9062S, 9076, 9078, 9087, 9096 confirmed working. Others may also work)__
-* __g910 Wireless Bluetooth Controller__
-* __Xiaomi Mi Controller__
-* __Steelseries Free__
-* __Steelseries Nimbus__
-* __Steelseries Stratus Duo__
-* __Steelseries Stratus XL__
-* __GameSir G3s__
-* __GameSir G4s__
-* __GameSir T1s__
-* __GameSir T2a__
-* __Hori Onyx__
-* __8BitDo SN30 Pro Xbox Cloud Gaming Edition__
-* __8BitDo Ultimate 2.4G Wireless Controller__
-* __8BitDo ZERO (Most other 8BitDo controllers have a Switch mode available. May require firmware update)__
-* __PowerA Moga Hero__
-* __PowerA Moga Pro__
-* __PowerA Moga Pro 2__
-* __Mad-Catz C.T.R.L.R__
-* __Mad-Catz L.Y.N.X 3__
-* __Razer Raiju Tournament__
-* __Razer Raiju Ultimate__
-* __Razer Serval__
-* __Mocute 050__
-* __Mocute 053__
-* __Gen Game S3__
-* __AtGames Legends Pinball Controller + Arcade Control Panel__
-* __Hyperkin Scout__
-* __Betop 2585N2__
-* __Atari Wireless Modern Controller__
-* __SCUF Vantage 2__
+- **Wii Remote** + extensions:
+  - Nunchuck, Classic Controller, Classic Controller Pro, SNES Mini, TaTaCon (Taiko drum), MotionPlus
+    
+- __Wii Balance Board (experimental)__
+- __WiiU Pro Controller__
+</details>
+
+<details>
+<summary><strong>Sony</strong></summary>
+ 
+- __Sixaxis Controller__
+  
+- __Dualshock3 (Playstation 3) Controller__
+- __DualShock4 (Playstation 4) Controller__
+- __Dualsense (Playstation 5) Controller__
+- __Dualsense Edge Controller__
+</details>
+
+<details>
+<summary><strong>Microsoft</strong></summary>
+ 
+- __Xbox One S/X Controller__
+
+  (not to be confused with Series S/X controllers - these use Bluetooth LE, which isn't currently supported)
+- __Xbox Elite Wireless Controller Series 2__
 
 **Not all Xbox One wireless controllers support Bluetooth. Older variants use a proprietary 2.4Ghz protocol and cannot be used with the Switch. See [here](https://support.xbox.com/help/hardware-network/accessories/connect-and-troubleshoot-xbox-one-bluetooth-issues) for information on identifying the Bluetooth variant.*
+</details>
+
+<details>
+<summary><strong>Steelseries</strong></summary>
+
+- __Free__
+  
+- __Nimbus__
+- __Stratus Duo__
+- __Stratus XL__
+</details>
+
+<details>
+<summary><strong>GameSir</strong></summary>
+
+- __G3s__
+- __G4s__
+  
+- __T1s__
+- __T2a__
+</details>
+
+<details>
+<summary><strong>8BitDo</strong></summary>
+
+- __SN30 Pro Xbox Cloud Gaming Edition__
+- __Ultimate 2.4G Wireless Controller__
+  
+- __ZERO__
+
+Most other 8BitDo controllers have a Switch mode available. May require firmware update
+</details>
+
+<details>
+<summary><strong>PowerA</strong></summary>
+
+- __Moga Hero__
+  
+- __Moga Pro__
+- __Moga Pro 2__
+</details>
+
+<details>
+<summary><strong>Mad-Catz</strong></summary>
+
+- __C.T.R.L.R__
+  
+- __L.Y.N.X 3__
+</details>
+
+<details>
+<summary><strong>Razer</strong></summary>
+
+- __Raiju Tournament__
+  
+- __Raiju Ultimate__
+- __Serval__
+</details>
+
+<details>
+<summary><strong>Mocute</strong></summary>
+
+- __050__
+  
+- __053__
+</details>
+
+<details>
+<summary><strong>Other brands</strong></summary>
+
+- __NVidia Shield Controller (2017 Model)__
+- __Ouya Controller__
+  
+- __Gamestick Controller__
+- __Gembox Controller__
+- __iCade Controller__
+- __Ipega Controllers (7197, 9017s, 9023, 9055, 9062S, 9076, 9078, 9087, 9096 confirmed working. Others may also work)__
+- __g910 Wireless Bluetooth Controller__
+- __Xiaomi Mi Controller__
+- __Hori Onyx__
+- __Gen Game S3__
+- __AtGames Legends Pinball Controller + Arcade Control Panel__
+- __Hyperkin Scout__
+- __Betop 2585N2__
+- __Atari Wireless Modern Controller__
+- __SCUF Vantage 2__
+</details>
 
 ### Requirements
 
