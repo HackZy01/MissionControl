@@ -17,6 +17,22 @@
 
 Use controllers from other consoles natively on your Nintendo Switch via Bluetooth. No dongles or other external hardware neccessary.
 
+1. [Features](#features)
+2. [Supported Controllers](#supported-controllers)
+3. [Requirements](#requirements)
+4. [Usage](#usage)
+   -  [Pairing controllers](#pairing-controllers)
+6. [Module configuration](#module-configuration)
+7. [Removal](#removal)
+8. [Planned/In-progress Features](#plannedin-progress-features)
+9. [Known Issues and Limitations](#known-issues-and-limitations)
+10. [Frequently Asked Questions](#frequently-asked-questions)
+11. [How it works](#how-it-works)
+12. [Building from source](#building-from-source)
+13. [Credits](#credits)
+14. [Support](#support)
+
+
 ### Features
 
 * Supports all Switch firmware versions.
