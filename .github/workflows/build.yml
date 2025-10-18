@@ -9,6 +9,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    container:
+      image: devkitpro/devkita64
 
     steps:
       - name: Checkout repository
@@ -16,32 +18,20 @@ jobs:
         with:
           submodules: recursive
 
-      - name: Install devkitPro pacman
+      - name: Install dependencies
         run: |
-          sudo apt-get update
-          sudo apt-get install -y wget tar gzip
+          dkp-pacman -Syy
+          dkp-pacman -S --noconfirm switch-libjpeg-turbo
 
-          # Download and install devkitPro pacman setup script (official method)
-          wget https://apt.devkitpro.org/install-devkitpro-pacman
-          chmod +x install-devkitpro-pacman
-          sudo ./install-devkitpro-pacman
-          
-      - name: Install Switch toolchain and dependencies
-        run: |
-          sudo dkp-pacman -Syy
-          sudo dkp-pacman -Syu --noconfirm
-          sudo dkp-pacman -S --noconfirm switch-dev switch-libjpeg-turbo
-
-      - name: Build
+      - name: Build Mission Control
         run: |
           export DEVKITPRO=/opt/devkitpro
           export DEVKITARM=${DEVKITPRO}/devkitARM
           export PATH=${DEVKITPRO}/tools/bin:$PATH
           make dist -j$(nproc)
 
-      - name: Upload artifact
+      - name: Upload build artifact
         uses: actions/upload-artifact@v4
         with:
           name: missioncontrol-dist
-          path: |
-            dist/*.zip
+          path: dist/*.zip
