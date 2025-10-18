@@ -177,7 +177,7 @@ Most other 8BitDo controllers have a Switch mode available. May require firmware
 Download the [latest release](https://github.com/ndeadly/MissionControl/releases) .zip and extract to the root of your SD card, allowing the folders to merge and overwriting any existing files. Reboot your console to activate the module and you're done!
 
 ***IMPORTANT: 
-Atmosphère >= 1.9.1 is required to run the latest release of Mission Control on firmware 20.1.0+. Using an older Atmosphère version will cause Mission Control to crash or freeze the system on boot.***
+Atmosphère >= 1.9.5 is required to run the latest release of Mission Control on firmware 20.5.0+. Using an older Atmosphère version will cause Mission Control to crash or freeze the system on boot.***
 
 ### Usage
 
