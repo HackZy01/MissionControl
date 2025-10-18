@@ -1,0 +1,46 @@
+name: Build Mission Control
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Install devkitPro pacman
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y wget tar gzip
+
+          # Download and install devkitPro pacman setup script (official method)
+          wget https://apt.devkitpro.org/install-devkitpro-pacman
+          chmod +x install-devkitpro-pacman
+          sudo ./install-devkitpro-pacman
+          
+      - name: Install Switch toolchain and dependencies
+        run: |
+          sudo dkp-pacman -Syy
+          sudo dkp-pacman -Syu --noconfirm
+          sudo dkp-pacman -S --noconfirm switch-dev switch-libjpeg-turbo
+
+      - name: Build
+        run: |
+          export DEVKITPRO=/opt/devkitpro
+          export DEVKITARM=${DEVKITPRO}/devkitARM
+          export PATH=${DEVKITPRO}/tools/bin:$PATH
+          make dist -j$(nproc)
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: missioncontrol-dist
+          path: |
+            dist/*.zip
