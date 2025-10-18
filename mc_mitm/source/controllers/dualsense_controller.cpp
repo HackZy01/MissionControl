@@ -279,4 +279,4 @@ namespace ams::controller {
         R_RETURN(this->WriteDataReport(&m_output_report));
     }
 
-}
+
