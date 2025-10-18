@@ -28,7 +28,7 @@ namespace ams::controller {
 
         constinit const u8 PlayerLedFlags[] = {
             // Mimic the Switch's player LEDs
-            0x01,
+            0x00,
             0x03,
             0x0B,
             0x1B,
@@ -51,7 +51,7 @@ namespace ams::controller {
 
         constinit const RGBColour PlayerLedBaseColours[] = {
             // Same colours used by PS4
-            {0x00, 0x00, 0x04}, // blue
+            {0x00, 0x00, 0x00}, // Trying to be as close to PS5
             {0x04, 0x00, 0x00}, // red
             {0x00, 0x04, 0x00}, // green
             {0x02, 0x00, 0x02}, // pink
@@ -184,14 +184,7 @@ namespace ams::controller {
 
                 bool active = point->contact & BIT(7) ? false : true;;
                 if (active) {
-                    u16 x = (point->x_hi << 8) | point->x_lo;
-
-                    if (x < (0.15 * TouchpadWidth)) {
                         m_buttons.minus = 1;
-                    } else if (x > (0.85 * TouchpadWidth)) {
-                        m_buttons.plus = 1;
-                    } else {
-                        m_buttons.capture = 1;
                     }
                 }
             }
@@ -228,13 +221,13 @@ namespace ams::controller {
         m_buttons.R  = buttons->R1;
         m_buttons.L  = buttons->L1;
 
-        m_buttons.minus = buttons->share;
+        //m_buttons.minus = buttons->share;
         m_buttons.plus  = buttons->options;
 
         m_buttons.lstick_press = buttons->L3;
         m_buttons.rstick_press = buttons->R3;
 
-        m_buttons.capture = buttons->mute;
+        m_buttons.capture = buttons->share;
         m_buttons.home    = buttons->ps;
     }
 
