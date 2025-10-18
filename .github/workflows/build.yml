@@ -18,11 +18,6 @@ jobs:
         with:
           submodules: recursive
 
-      - name: Install libjpeg-turbo (dependency)
-        run: |
-          dkp-pacman -Syy
-          dkp-pacman -S --noconfirm switch-libjpeg-turbo
-
       - name: Build Mission Control
         run: |
           make dist -j$(nproc)
